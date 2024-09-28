@@ -13,7 +13,8 @@
     border: none;
     text-decoration: none;
     text-transform: capitalize;/*Todas palavras iniciam com letra maiúscula*/
-    transition: 0.2 linear;
+    transition: 0.2s linear;
+    font-family: "Roboto", sans-serif;
 
 }
 
@@ -42,4 +43,68 @@ section{
     justify-content: space-between;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.navbar a:hover{
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.icons img{
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.btn{
+    background-color: var(--main-color);
+    color: white;
+    padding:1rem 3rem ;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.home-container{
+    background: url('img/home-img.jpg');
+    background-position: center ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    & section{
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
+
+.content{
+    max-width: 60rem;
+
+}
+
+.content h3{
+    color: white;
+    font-size: 6rem;
+}
+
+.content p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0;
 }
