@@ -24,10 +24,11 @@
 
             <nav class="navbar">
                 <div class="icons hamburguer">
-                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png" alt="menu--v1"/>
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/menu--v1.png"
+                        alt="menu--v1" />
                 </div>
                 <div class="link">
-                    <a href="#home">Home</a>
+                    <a href="#">Home</a>
                     <a href="#about">Sobre</a>
                     <a href="#menu">Menu</a>
                     <a href="#review">Avaliações</a>
@@ -36,8 +37,9 @@
             </nav>
 
             <div class="icons">
+                <input type="text" onblur="fecharInput()" >
                 <img width="30" height="30" src="https://img.icons8.com/ios/30/FFFFFF/search--v1.png"
-                    alt="search--v1" />
+                    alt="search--v1" class="img-lupa" />
                 <img width="30" height="30" src="https://img.icons8.com/material-rounded/30/FFFFFF/shopping-cart.png"
                     alt="shopping-cart" />
             </div>
@@ -122,7 +124,88 @@
             </div>
         </div>
     </section>
+    <section class="review" id="review">
+        <h2 class="title">Nossos <span>Clientes</span></h2>
+        <div class="box-container">
 
+            <div class="box">
+                <img src="img/quote-img.png" alt="comentário">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto molestias aliquam incidunt!
+                    Officia assumenda quod aliquid blanditiis sit labore cupiditate? Harum fugiat aliquid repudiandae
+                    molestias vel ratione dignissimos ipsum.</p>
+                <img src="img/pic-1.png" alt="foto-cliente" class="user">
+                <h3>João Silva</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                        <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/quote-img.png" alt="comentário">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto molestias aliquam
+                    incidunt! Officia assumenda quod aliquid blanditiis sit labore cupiditate? Harum fugiat aliquid
+                    repudiandae molestias vel ratione dignissimos ipsum.</p>
+                <img src="img/pic-2.png" alt="foto-cliente" class="user">
+                <h3>Larissa Souza</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star-half-empty.png"
+                        alt="star-half-empty" />
+
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/quote-img.png" alt="comentário">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet architecto molestias aliquam
+                    incidunt! Officia assumenda quod aliquid blanditiis sit labore cupiditate? Harum fugiat aliquid
+                    repudiandae molestias vel ratione dignissimos ipsum.</p>
+                <img src="img/pic-3.png" alt="foto-cliente" class="user">
+                <h3>José Augusto</h3>
+                <div class="stars">
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+                    <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/star--v1.png"
+                        alt="star--v1" />
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="address" id="address">
+        <h2 class="title"> Nosso <span>Endereço</span></h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14703.366528350596!2d-43.10686230410477!3d-22.882307901065673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x998300111988c7%3A0xdad62d97d5e63c68!2sMille%20Caff%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1727613093621!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="footer">
+        <div class="share">
+            <img width="30" height="30" src="https://img.icons8.com/material-outlined/30/FFFFFF/instagram-new--v1.png" alt="instagram-new--v1"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/facebook-new.png" alt="facebook-new"/>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/30/FFFFFF/twitter.png" alt="twitter"/>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 

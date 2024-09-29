@@ -45,6 +45,7 @@ section{
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
 }
+
 .navbar{
     display: flex;
     flex-direction: column;
@@ -57,7 +58,10 @@ section{
     top: 0;
     transform: translateX(-50%);
 }
-
+.hamburguer{   
+    display: flex;
+    justify-content: end;
+}
 .link{
     display: none;
     flex-direction: column;
@@ -80,6 +84,14 @@ section{
     border-bottom: 0.1rem solid var(--main-color);
     padding-bottom: 0.5rem;
     font-size: 2rem;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons input{
+    display: none;
+    height: 30px;
 }
 
 .icons img{
@@ -174,7 +186,7 @@ section{
     line-height: 1.8;
 }
 
-.menu .box-container{
+.box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30rem, 1fr));
     gap: 1.5rem;
@@ -184,6 +196,7 @@ section{
     text-align: center;
     border: var(--border);
     padding: 5rem;
+    cursor: pointer;
 
 }
 
@@ -191,7 +204,7 @@ section{
     height: 10rem;
 }
 
-.menu .box-container .box h3{
+.box-container .box h3{
     color: white;
     font-size: 2rem;
     padding: 1rem 0;
@@ -208,6 +221,63 @@ section{
     font-size: 1.5rem;
     text-decoration: line-through;
     font-weight: 100;
+}
+.menu .box-container .box:hover{
+    background-color: white;
+
+}
+.menu .box-container .box:hover>*{
+    color: var(--black);
+    
+}
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p{
+    font-size: 1.5rem;
+    color: white;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+.review .box-container .box h3{
+    color: white;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share img{
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+
+}
+.footer .share img:hover{
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
 }
 
 @media screen and ( min-width:680px) {
